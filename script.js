@@ -29,7 +29,7 @@ function runTimer() {
       gameOver.insertAdjacentHTML(null);
     } else {
       clearInterval(timerint);
-      document.querySelector("#pbtm").innerHTML = "";
+      document.querySelector("#pbtm").innerHTML = null;
       gameOver.insertAdjacentHTML(
         "beforeend",
         `<h2>Your Score is <span> ${score} </span></h2> 
