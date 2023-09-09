@@ -32,7 +32,7 @@ function runTimer() {
       document.querySelector("#pbtm").innerHTML = "";
       gameOver.insertAdjacentHTML(
         "beforeend",
-        `<h2>Your Score is ${score} </h2> 
+        `<h2>Your Score is <span> ${score} </span></h2> 
         <h1> Game Over</h1> 
         <a href="/">Play Again</a>
         `
