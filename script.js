@@ -49,6 +49,8 @@ document.querySelector("#pbtm").addEventListener("click", function (details) {
     makeBubble();
     getNewHit();
     timer = 21;
+  }else{
+    timer =0;
   }
 });
 runTimer();
