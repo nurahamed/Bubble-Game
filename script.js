@@ -1,6 +1,6 @@
 let score = 0;
 let hitrn = 0;
-var timer = 20;
+var timer = 5;
 function getScore() {
   score += 10;
   document.querySelector("#scorevalue").textContent = score;
@@ -20,18 +20,20 @@ function makeBubble() {
   document.querySelector("#pbtm").innerHTML = clutter;
 }
 
-const gameOver = document.getElementById("pbtm");
+const gameOver = document.getElementById("gameover");
 function runTimer() {
   var timerint = setInterval(function () {
     if (timer > 0) {
       timer--;
       document.querySelector("#timerval").textContent = timer;
+      gameOver.insertAdjacentHTML(null);
     } else {
       clearInterval(timerint);
-      document.querySelector("#pbtm").innerHTML = `<h2>Your Score is ${score} </h2>`;
+      document.querySelector("#pbtm").innerHTML = "";
       gameOver.insertAdjacentHTML(
         "beforeend",
-        ` <h1> Game Over</h1> 
+        `<h2>Your Score is ${score} </h2> 
+        <h1> Game Over</h1> 
         <a href="/">Play Again</a>
         `
       );
@@ -52,4 +54,5 @@ document.querySelector("#pbtm").addEventListener("click", function (details) {
 runTimer();
 makeBubble();
 getNewHit();
+
 // getScore();
