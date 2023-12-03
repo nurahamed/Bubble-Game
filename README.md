@@ -27,6 +27,8 @@ This game, developed using HTML, JavaScript DOM Manipulation, and CSS, offers an
    - Developers can explore customization options, such as modifying game dynamics, adding levels, or improving the user interface. The readme provides information on running the game, customizing features, and contributing to its development.
 
 Overall, this project serves as an excellent starting point for beginners and offers potential for expansion and enhancement.
+
+
 The game initializes with a score of 0 and a timer set to 20 seconds. The `getScore()` function increments the score by 10 each time the player successfully clicks on the correct bubble. The `getNewHit()` function generates a random number (the target) and updates the corresponding HTML element to display this target.
 
 The `makeBubble()` function dynamically creates a grid of bubbles, each containing a random number. The grid is initially rendered, and subsequent calls to this function refresh the bubble layout.
