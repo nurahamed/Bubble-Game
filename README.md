@@ -1,6 +1,6 @@
 # Bubble-Game
 
-This game, developed using HTML, JavaScript DOM Manipulation, and CSS, offers an engaging and simple browser-based experience. Here's a breakdown of its key features for your GitHub readme.md file:
+This game, developed using HTML, JavaScript DOM Manipulation, and CSS, offers an engaging and simple browser-based experience. Here's a breakdown of its key features.
 
 1. **Score Mechanism:**
    - The player's score starts at 0 and increases by 10 each time they successfully click on the bubble corresponding to the current Hit number.
@@ -35,4 +35,5 @@ The `runTimer()` function initiates a countdown timer that decrements every seco
 Upon game over, the final score is displayed along with a message, and an option to play again is provided.
 
 This code is suitable for a beginner-level project and can serve as a foundation for expanding the game's features, such as adding levels, incorporating sound effects, or improving the user interface. 
+
 Overall, this project serves as an excellent starting point for beginners and offers potential for expansion and enhancement.
